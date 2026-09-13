@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(209, 137, 137);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+#input-name{
+    padding: 8px;
+    font-size: 2.25 rem;
+    border: none;
+    margin-right:2px;
+}
+#greetbtn{
+    padding: 8px;
+    font-size: 2.5 rem;
+    border: none;
+
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
