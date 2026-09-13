@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(40, 18, 2);
+
+}
+.container{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap:20vh;
+}
+
+#title{
+    font-size: 3rem;
+    padding-top:15%;
+
+}
+.label{
+    display:flex;
+}
+#number{
+    margin-right:25px;
+    font-size: 3rem;
+
+}
+#increase{
+    border: none;
+    font-size:2rem;
+    padding:7px;
+    background:rgb(94, 41, 4);
+    color:rgb(1, 4, 4);
+}
