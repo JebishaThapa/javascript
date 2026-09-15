@@ -4,18 +4,27 @@
     box-sizing: border-box;
 }
 .container{
-    margin: 8px 5px;
-    background: rgb(234, 70, 130);
+    position:relative;
+    top:7px;
+    left: 5px;
     display: flex;
     align-items: center;
     position: relative;
+    justify-content: center;
+    width: 250px;
+    height: 25px;
+}
+.password-input{
+    flex-grow: 1;
+    height:100%;
+    padding:0 37px 0 5px;
+   
 }
 
-
-
-#btn{
+.btn{
     position:absolute;
-    
-    left: 84%;
-    font-size: 0.6rem;
+    right:3px;
+    font-size: 0.75rem;
+    border: 1px solid rgb(164, 144, 144);
+    cursor: pointer;
 }
