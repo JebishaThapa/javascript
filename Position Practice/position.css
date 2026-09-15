@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.test{
+    position:relative;
+    background-color: rgb(234, 131, 148);
+    height:150px;
+    width:150px;
+    top: 20px;
+    left: 15px;
+}
+.round{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    position:absolute;
+    height:20px;
+    width:20px;
+    background:rgb(183, 82, 82);
+    border-radius: 50%;
+    top:-10px;
+    right:-10px;
+}
+.round p{
+    position:absolute;
+    left:11%;
+    font-size: 0.8rem;
+    color:#fff;
+
+}
