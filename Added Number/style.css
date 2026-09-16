@@ -53,6 +53,7 @@
     border:2px solid transparent;
     background: #EA9D9D;
     padding:20px;
+    text-align: center;
     
 }
 .largest-box{
@@ -61,4 +62,5 @@
     border:2px solid transparent;
     background: #EA9D9D;
     padding:20px;  
+    text-align: center;
 }
