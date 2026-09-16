@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    position:relative;
+    top:30px;
+    left:10px;
+    background:rgb(235, 198, 204);
+}
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-field{
+    background:rgb(234, 154, 168);
+    border: none;
+    padding:2px;
+}
+.btn{
+    background:rgb(199, 87, 106);
+    border: none;
+    margin-left:5px;
+    padding:2px;
+    cursor:pointer;
+}
+.list{
+    position: relative;
+    top:18px;
+    display:block;
+}
+
+#entered{
+    
+    position: relative;
+    top: 35px;
+    left: 3px;
+    font-size: 0.6rem;
+
+}
+#array{
+    display: block;
+    margin-top: 10px;
+}
+#array li{
+    display: block;
+   
+    margin-bottom: 6px;
+}
