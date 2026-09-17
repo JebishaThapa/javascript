@@ -5,15 +5,20 @@
  let arr = [];
  function addedArray(){
     let input = parseInt(inputValue.value, 10);
-    if(inputValue && !isNaN(input)){
-        arr.push(input);
+    if(isNaN(input)){
+        alert("Please enter a valid number");
+        return;
+        
     }
-    for (let i=0; i<arr.length; i++){
-        let list = document.createElement("li");
-        list.textContent=arr[i];
-        outputBox.appendChild(list);
-    }
+    arr.push(input);
+    inputValue.value="";
 
+    outputBox.textContent= "`Output: [$(arr)]`";
+
+    
+
+    highestNumber();
+}
 function highestNumber(){
     let maxNumber = arr[0];
     for(let i=0; i<arr.length; i++){
@@ -22,11 +27,9 @@ function highestNumber(){
         }
 
     }
-    largestBox.textContent=maxNumber;
-
+    largestBox.textContent="The largest number is: `$(maxNumber)`";
+}
 btn.addEventListener('click',()=>{
     addedArray();
 
-})
- }
-}
+});
