@@ -13,9 +13,7 @@
     arr.push(input);
     inputValue.value="";
 
-    outputBox.textContent= "`Output: [$(arr)]`";
-
-    
+    outputBox.textContent= `Output: [${arr}]`;
 
     highestNumber();
 }
@@ -27,7 +25,7 @@ function highestNumber(){
         }
 
     }
-    largestBox.textContent="The largest number is: `$(maxNumber)`";
+    largestBox.textContent=`The largest number is: ${maxNumber}`;
 }
 btn.addEventListener('click',()=>{
     addedArray();
