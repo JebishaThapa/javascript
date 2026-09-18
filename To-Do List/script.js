@@ -1,4 +1,35 @@
-const form = document.querySelector("#todo-form");
-const input = document.querySelector("#todo-input");
-const list = document.querySelector("#todo-list");
+const inputBox = document.getElementById("inputValue");
+const listContainer = document.getElementById("list-container");
+function addTask(){
+    if(inputBox.value ===""){
+        alert("You must write something!");
+    }else{
+        let li=document.createElement('li');
+        li.innerHTML=inputBox.value;
+        listContainer.appendChild(li);
+        let span = document.createElement("span");
+        span.innerHTML="\u00d7";
+        appendChild(span);
+        saveData()
+    }
+    inputBox.value="";
+}
+listContainer.addEventListener('click',function (e){
+    if(e.target.tagnName === "LI"){
+        e.target.classList.togglr("checked");
+        saveData()
 
+    }
+    else if(e.target.tagName==="SPAN"){
+        e.target.parentElement.remove();
+        saveData()
+    }
+},false);
+
+function saveData(){
+    localStorage.setItem("data",listContainer.innerHTML);
+}
+function showTask(){
+    listContainer.innerHTML=localStorage.getItem("data");
+}
+showTask();
