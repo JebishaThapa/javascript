@@ -14,17 +14,20 @@ const divideNumbers=(num1, num2)=>{
     return num1/num2
 }
 
-
-const main=(number1, operator, number2)=>{
-    if(operator ==="+"){
+const calc=(num1, operator, num2)=>{
+    return [num1, operator, num2]
+}
+function main(){
+    const [number1, operators, number2]=calc(43,"-", 89)
+    if(operators ==="+"){
         return addtionNumbers(number1, number2);
-    }else if(operator ==="-"){
+    }else if(operators ==="-"){
         return subtractNumbers(number1, number2);
-    }else if(operator==="*"){
+    }else if(operators==="*"){
         return multiplyNumbers(number1, number2);
-    }else if(operator==="/"){
+    }else if(operators==="/"){
         return divideNumbers(number1, number2);
     }else{
         return "invalid operator";
     }
-}
+}main();

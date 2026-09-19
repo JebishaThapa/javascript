@@ -4,9 +4,9 @@
  const largestBox = document.getElementById("largest-box");
  let arr = []; //a new array empty
  function addedArray(){
-    const input = parseInt(inputValue.value, 10); //made inputvalue in integer kasto? kun wala?
+    const input = parseInt(inputValue.value, 10); 
     if(!isNaN(input)){
-        //if it is not a number error and return back no return? bahira kassari aaux
+        
         arr.push(input);
         inputValue.value="";
 
@@ -22,13 +22,13 @@ function clearArray(){
     if(error.toLowerCase()==="clear"){
         outputBox.textContent="Output: cleared";
         arr=[];
-        inputValue.value="";//aaba feri add garna refresh nai?anii kun hello? how to call 
+        inputValue.value="";
         largestBox.textContent="";
     }
 }
 function highestNumber(){
     let maxNumber = arr[0];
-    for(let i=0; i<arr.length; ++i){//how to clear them 
+    for(let i=0; i<arr.length; ++i){
         if (arr[i]>maxNumber){
             maxNumber=arr[i];
         }
