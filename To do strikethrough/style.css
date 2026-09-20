@@ -12,13 +12,14 @@ h3{
     font-size:1.5rem;
     position: relative;
     bottom:6px;
+    color:#5e684c;
 }
 .container{
     display:flex;
     align-items: center;
     justify-content: space-between;
     gap:5px;
-    background:pink;
+    background:#8B9A6E;
     border-radius: 12px;
     width:600px;
 
@@ -32,15 +33,17 @@ h3{
     background: transparent;
 }
 #btn{
+    background:#EAE2D6;
     border:none;
     border-radius: 12px;
     padding:10px;
     font-size:1rem;
+    color:rgb(58, 58, 58);
 }
 ul li{
     position:relative;
     top:9px;
-    font-size: 1rem;
+    font-size: 1.25rem;
 
 }
 ul li.checked{
