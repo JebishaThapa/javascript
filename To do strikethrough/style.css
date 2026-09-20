@@ -18,7 +18,7 @@ body{
 
 }
 #task{
-    flex:1px;
+    flex:1;
     border: none;
     border-radius: 12px;
     padding:8px;
@@ -32,9 +32,10 @@ body{
     font-size:1rem;
 }
 ul li{
-    font-size: 1 rem;
+    font-size: 1rem;
 
 }
 ul li.checked{
     text-decoration: line-through;
+    cursor:pointer;
 }

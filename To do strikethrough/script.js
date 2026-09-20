@@ -1,6 +1,6 @@
-const text = document.getElementById("text");
+const text = document.getElementById("task");
 const btn= document.getElementById("btn");
-const list= document.getElementById(list);
+const list= document.getElementById("list");
 
 function showTask(){
     if(text.value===""){
