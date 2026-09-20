@@ -8,30 +8,38 @@ body{
     height:100vh;
     padding:50px;
 }
+h3{
+    font-size:1.5rem;
+    position: relative;
+    bottom:6px;
+}
 .container{
     display:flex;
     align-items: center;
     justify-content: space-between;
-    gap:3px;
+    gap:5px;
     background:pink;
     border-radius: 12px;
+    width:600px;
 
 }
 #task{
     flex:1;
     border: none;
     border-radius: 12px;
-    padding:8px;
+    padding:10px;
     font-size:1rem;
     background: transparent;
 }
 #btn{
     border:none;
     border-radius: 12px;
-    padding:8px;
+    padding:10px;
     font-size:1rem;
 }
 ul li{
+    position:relative;
+    top:9px;
     font-size: 1rem;
 
 }
